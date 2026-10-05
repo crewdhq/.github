@@ -11,7 +11,7 @@
   <p>
     <a href="https://crewd.dev"><img src="https://img.shields.io/badge/website-crewd.dev-black?style=flat-square" alt="Website"></a>
     <a href="https://crewd.dev/docs"><img src="https://img.shields.io/badge/docs-reference-blue?style=flat-square" alt="Docs"></a>
-    <a href="https://github.com/crewdhq/crewd-cli"><img src="https://img.shields.io/badge/cli-v0.1.0-orange?style=flat-square" alt="CLI"></a>
+    <a href="https://crewd.dev/explore"><img src="https://img.shields.io/badge/registry-explore-purple?style=flat-square" alt="Registry"></a>
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License"></a>
   </p>
 
@@ -66,15 +66,16 @@ curl -fsSL https://crewd.dev/install.sh | sh
 
 ---
 
-### Core Repositories
+### Supported AI Coding Environments
 
-| Repository | Description |
-| :--- | :--- |
-| **[crewd.dev](https://github.com/crewdhq/crewd.dev)** | The web platform, package registry API, interactive versioning UI, and documentation hub. |
-| **[crewd-cli](https://github.com/crewdhq/crewd-cli)** | The official Go CLI (`crewd`) for installing, compiling, promoting, and managing prompt-defined agents. |
+| Host | Compiled Output | Memory Support |
+| :--- | :--- | :--- |
+| **Claude Code** | `.claude/agents/<name>.md` subagents & `.claude/skills/` | Persistent `.crewd/memory/<name>.md` |
+| **Cursor** | `.cursor/rules/crewd-<name>.mdc` rules | Rule references |
+| **Gemini CLI** | Marker-delimited `GEMINI.md` sections | Marker blocks |
 
 ---
 
 <div align="center">
-  <sub>Built with open standards for the multi-agent coding future. © 2026 Crewd</sub>
+  <sub>Built with open standards for the multi-agent coding future. Visit <a href="https://crewd.dev">crewd.dev</a> to explore the registry.</sub>
 </div>
